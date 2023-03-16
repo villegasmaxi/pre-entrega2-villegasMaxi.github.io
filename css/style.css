@@ -1,2 +1,179 @@
-h1{color: white}
-p{color:tomato}
+body {
+    background-image: url(../imagenes/PastelDeFruta.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*generales*/
+
+h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: clamp(1em, 5vw, 4em);
+}
+
+li a {
+    color: white
+}
+
+h2 {
+    color: white;
+    font-size: clamp(1em, 4vw, 3em);
+    font-family: 'Cinzel Decorative', cursive;
+    ;
+}
+
+/*header*/
+
+#header .header-contenedor .header-title h1{color:orangered;}
+
+.header-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr;
+    grid-template-rows: auto auto;
+}
+
+
+.header-contenedor .header-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-contenedor .header-nav ul {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.header-contenedor .header-nav:hover ul {
+    display: flex;
+}
+
+#header .header-contenedor .header-nav ul li{text-decoration: none;}
+
+
+.header-contenedor .header-nav img {
+    width: 20%;
+    height: auto;
+    background-color: #f86706;
+}
+
+.header-contenedor .header-logo img {
+    width: 50%;
+    height: auto;
+    margin-left: 2em;
+}
+
+.header-contenedor .header-title {
+    text-align: center;
+}
+
+.header-contenedor .header-bar {
+    grid-column: 1/4;
+}
+
+.header-contenedor .header-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header-contenedor .header-bar ul li {
+    margin: 0 1em;
+}
+
+/*main*/
+#main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+}
+
+#main .main-title {
+    margin-left: 2em;
+}
+
+#main .main-iframe {
+    align-self: center;
+}
+
+#main .main-iframe iframe {
+    width: 30vw;
+    height: auto;
+}
+
+@media(max-width:763px) {
+    #header .header-contenedor .header-bar {
+        display: none;
+    }
+}
+
+@media(min-width:764px) {
+    #header .header-contenedor .header-nav {
+        display: none;
+    }
+}
+
+@media(min-width:764px) {
+    #header .header-contenedor .header-title {
+        grid-column: 2/4;
+    }
+}
+
+
+
+
+
+/*
+config footer #pie {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    background-image: url(/imagenes/PastelDeFruta.jpg);
+    background-size: auto;
+    background-position: bottom;
+    border: 3px solid #f86706;
+}
+
+#pie,
+ul,
+li,
+ul,
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+#pie ul li {
+    font-size: 12px;
+}
+
+.nav .boton {
+    float: left;
+    font-family: sans-serif;
+    font-weight: 800;
+    border: 1px black solid;
+    background-color: antiquewhite;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.nav li ul li a:hover {
+    background-color: #f86706;
+    color: black;
+    font-size: 16px;
+}
+
+.nav li ul {
+    display: none;
+}
+
+.nav li:hover ul {
+    display: block;
+}*/
