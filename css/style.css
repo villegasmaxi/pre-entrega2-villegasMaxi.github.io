@@ -122,14 +122,17 @@ li a {
 #main {
     display: flex;
     flex-direction: column;
+    min-height: 65vh;
 }
 
 #main .main-title {
     margin-left: 2em;
+    margin-top: 1em;
 }
 
 #main .main-iframe {
     align-self: center;
+    margin-top: 10vh;
 }
 
 #main .main-iframe iframe {
@@ -138,7 +141,7 @@ li a {
 }
 
 #footer {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 #footer .footer-contenedor {
