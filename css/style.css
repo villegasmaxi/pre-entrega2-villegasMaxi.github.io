@@ -138,7 +138,22 @@ li a {
     width: 50vw;
     height: auto;
 }
-
+#main .form{
+        text-align: center;
+        padding-bottom: 20px;
+}
+    
+#main .form .vertical{
+        background-image: url(../imagenes/silueta.jpg);
+        padding: 20px;
+        border-radius: 10px;
+        display:flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 0 auto;
+        gap: 15px;
+        color: antiquewhite;
+}
 #footer {
     background-color: rgba(255, 255, 255, 0.7);
 }
