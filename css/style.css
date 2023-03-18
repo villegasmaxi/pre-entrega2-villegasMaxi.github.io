@@ -26,7 +26,6 @@ h2 {
     color: white;
     font-size: clamp(1em, 4vw, 3em);
     font-family: 'Cinzel Decorative', cursive;
-    ;
 }
 
 li a {
@@ -136,7 +135,7 @@ li a {
 }
 
 #main .main-iframe iframe {
-    width: 30vw;
+    width: 50vw;
     height: auto;
 }
 
