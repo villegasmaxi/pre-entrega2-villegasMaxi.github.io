@@ -138,25 +138,42 @@ li a {
     width: 50vw;
     height: auto;
 }
-#main .form{
-        text-align: center;
-        padding-bottom: 20px;
+
+#main .form {
+    text-align: center;
+    padding-bottom: 20px;
 }
-    
-#main .form .vertical{
-        background-image: url(../imagenes/silueta.jpg);
-        padding: 20px;
-        border-radius: 10px;
-        display:flex;
-        flex-direction: column;
-        width: 40%;
-        margin: 0 auto;
-        gap: 15px;
-        color: antiquewhite;
+
+#main .form .vertical {
+    background-image: url(../imagenes/silueta.jpg);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+    gap: 15px;
+    color: antiquewhite;
 }
+
+#main .main-nos .main-nos-section .main-nos-texto p {
+    font-size: clamp(1.2em, 3vw, 2em);
+    color: orangered;
+    margin-left: 2vw;
+}
+
+#main .main-nos .main-nos-telon {
+    display: flex;
+}
+
+#main .main-nos .main-nos-telon img {
+    max-width: 25%;
+}
+
 #footer {
     background-color: rgba(255, 255, 255, 0.7);
 }
+
 
 #footer .footer-contenedor {
     display: flex;
@@ -186,39 +203,54 @@ li a {
 }
 
 
-@media(max-width:763px) {
+@media(max-width:767px) {
     #header .header-contenedor .header-bar {
         display: none;
     }
 }
 
-@media(min-width:764px) {
+@media(min-width:768px) {
     #header .header-contenedor .header-nav {
         display: none;
     }
 }
 
-@media(min-width:764px) {
+@media(min-width:768px) {
     #header .header-contenedor .header-title {
         grid-column: 2/4;
     }
 }
 
-@media(max-width:763px) {
+@media(max-width:767px) {
     #footer .footer-contenedor .footer-title {
         display: none;
     }
 
 }
 
-@media(max-width:763px) {
+@media(max-width:767px) {
     #footer .footer-contenedor .footer-redes .twitter {
         margin-right: 0%;
     }
 }
 
-@media(max-width:763px) {
+@media(max-width:767px) {
     #main .main-title {
         text-align: center;
     }
+}
+
+@media(max-width:767px) {
+    #main .main-nos .main-nos-telon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:767px) {
+    #main .main-nos .main-nos-telon img {
+        max-width: 100%;
+    }
+
 }
